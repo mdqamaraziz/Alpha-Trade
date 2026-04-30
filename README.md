@@ -1,16 +1,18 @@
 # 🚀 Alpha Trade — Full Stack Stock Trading Platform
 
-A comprehensive, full-stack trading dashboard inspired by Zerodha. This project focuses on modern web architecture, secure authentication, and cloud-based deployment.
+Alpha is a full-stack trading dashboard inspired by Zerodha. This project focuses on modern web architecture, secure authentication, and cloud-based deployment.
 
 ---
 
 ## 🌐 Live Demo
 
-Experience the platform live: [Alpha Trade Demo](https://alpha-trade-1-kx8a.onrender.com)
+👉 Experience the platform live: [Alpha Trade Demo](https://alpha-trade-1-kx8a.onrender.com)
+
+---
 
 ## 💻 Repository
 
-Source code: [GitHub Repo](https://github.com/mdqamaraziz)
+Source code: [GitHub Repo](https://github.com/mdqamaraziz/Alpha-Trade)
 
 ---
 
@@ -22,7 +24,7 @@ This project is a functional trading platform, designed to simulate real-world f
 
 - **End-to-End Communication:** Seamless integration between React frontend and Node.js/Express backend.
 - **Secure Authentication:** Implementation of JWT-based login and signup flows.
-- **Cloud Infrastructure:** Fully deployed environment using Vercel, Render, and MongoDB Atlas.
+- **Cloud Infrastructure:** Fully deployed using Vercel, Render, and MongoDB Atlas.
 
 ---
 
@@ -34,45 +36,100 @@ This project is a functional trading platform, designed to simulate real-world f
 | **Backend**    | Node.js, Express.js                                      |
 | **Database**   | MongoDB Atlas (NoSQL)                                    |
 | **Auth**       | JSON Web Tokens (JWT) & Bcrypt.js                        |
-| **Deployment** | coming soon on Render                                    |
+| **Deployment** | Render (Backend), Vercel (Frontend)                      |
 
 ---
 
 ## ✨ Features
 
-- [x] **User Signup & Login:** Secure account creation and credential validation.
-- [x] **JWT Authentication:** Token-based session management.
-- [x] **Protected Routes:** Dashboard access restricted to authorized users.
-- [x] **RESTful API:** Clean API design for holdings, positions, and user data.
-- [x] **Real-time Notifications:** Feedback via React Toastify for successful/failed actions.
+- [x] **User Signup & Login:** Secure account creation and credential validation
+- [x] **JWT Authentication:** Token-based session management
+- [x] **Protected Routes:** Dashboard access restricted to authorized users
+- [x] **RESTful API:** Clean API design for holdings, positions, and user data
+- [x] **Real-time Notifications:** Feedback via React Toastify
 
 ---
 
 ## 🔐 Authentication Flow
 
-1. **User Signup/Login:** User submits credentials via the React form.
-2. **Backend Validation:** Node.js server validates data and checks MongoDB.
-3. **JWT Generation:** Server signs a unique token using a secret key.
-4. **Storage:** The token is sent to the client and stored in `localStorage`.
-5. **Authorization:** The token is included in headers for all protected API requests.
+1. User submits login/signup form
+2. Backend validates credentials
+3. JWT token is generated
+4. Token stored in localStorage
+5. Token sent in API requests
 
 ---
 
 ## 📚 Key Learnings
 
-- [x] Architectural design of Full Stack applications.
-- [x] Managing environment variables across different deployment environments.
-- [x] Implementing secure password hashing using Bcrypt.js.
-- [x] Handling Cross-Origin Resource Sharing (CORS) between frontend and backend.
+- Full-stack architecture design
+- Environment variable management
+- Secure password hashing using Bcrypt.js
+- Handling CORS between frontend and backend
 
 ---
 
 ## ⭐ Future Improvements
 
-- [ ] **HTTP-Only Cookies**: Enhancing security for token storage.
-- [ ] **Refresh Tokens**: Implementing longer sessions without compromising security.
-- [ ] **Market Data**: Integration with live stock market APIs (e.g., Alpha Vantage).
-- [ ] **Dockerization**: Containerizing the app for easier deployment.
+- HTTP-Only Cookies for better security
+- Refresh token implementation
+- Live stock market API integration
+- Docker containerization
+
+---
+
+## ⚙️ Local Setup
+
+### 1. Clone repository
+
+```bash
+git clone https://github.com/mdqamaraziz/Alpha-Trade.git
+cd Alpha-Trade
+```
+
+---
+
+### 2. Install dependencies
+
+```bash
+cd frontend
+npm install
+
+cd ../backend
+npm install
+```
+
+---
+
+### 3. Setup environment variables
+
+#### 📁 frontend/.env
+
+```env
+REACT_APP_API_URL=your_backend_url_here
+```
+
+#### 📁 backend/.env
+
+```env
+PORT=5000
+MONGO_URI=your_mongodb_url
+JWT_SECRET=your_secret
+```
+
+---
+
+### 4. Run project
+
+```bash
+# frontend
+cd frontend
+npm start
+
+# backend
+cd backend
+npm run dev
+```
 
 ---
 
@@ -80,5 +137,7 @@ This project is a functional trading platform, designed to simulate real-world f
 
 **Md Qamar Aziz**
 
-🔗 GitHub: https://github.com/mdqamaraziz  
+🔗 GitHub: https://github.com/mdqamaraziz
 🔗 LinkedIn: https://www.linkedin.com/in/mdqamaraziz
+
+---
