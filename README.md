@@ -1,6 +1,6 @@
 # 🚀 Alpha Trade — Full Stack Stock Trading Platform
 
-Alpha is a full-stack trading dashboard inspired by Zerodha. This project focuses on modern web architecture, secure authentication, and cloud-based deployment.
+Alpha is a full-stack trading web application. This project focuses on modern web architecture, secure authentication, and cloud-based deployment.
 
 ---
 
